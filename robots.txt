@@ -1,0 +1,23 @@
+# robots.txt - Cho phép bot thu thập toàn bộ site
+# Sử dụng chung cho cả piwallet.top và pi.timnhanh.top
+
+User-agent: *
+Allow: /
+
+# Cấm bot thu thập các file không cần thiết
+Disallow: /assets/*.js
+Disallow: /assets/*.css
+Disallow: /private/
+Disallow: /temp/
+
+# Delay để tránh quá tải server (tốt cho SEO)
+Crawl-delay: 1
+
+# Sitemap cho từng domain (Render sẽ tự động nhận diện)
+Sitemap: https://piwallet.top/sitemap.xml
+Sitemap: https://pi.timnhanh.top/sitemap.xml
+
+# Cho phép Googlebot chạy JavaScript
+User-agent: Googlebot
+Allow: /
+Allow: /assets/
